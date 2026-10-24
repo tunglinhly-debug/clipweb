@@ -111,7 +111,7 @@ body{overflow:hidden}
 const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS6pSicLqddMTpqdhfKN_PZbPJ7awj6R-dKf2lms3w3bwS0klU8hEwdWGW93H-8oS558MrE2cwY588h/pub?output=csv"; // Dán URL CSV đã Publish to web vào đây.
 
 let clips = [];
-let activeIndex = 1;
+let activeIndex = -1;
 
 function parseCSV(text){
   const rows=[]; let row=[], cell="", quoted=false;
